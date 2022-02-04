@@ -1,0 +1,7 @@
+name: hello_world-workflow
+on: [push]
+jobs:
+  production-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello World"
