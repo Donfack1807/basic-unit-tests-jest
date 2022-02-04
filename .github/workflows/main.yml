@@ -1,0 +1,9 @@
+name: node_clone-workflow
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run : echo "hello world"
